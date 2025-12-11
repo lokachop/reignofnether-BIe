@@ -4,8 +4,10 @@ import com.solegendary.reignofnether.ReignOfNether;
 import com.solegendary.reignofnether.api.ReignOfNetherRegistries;
 import com.solegendary.reignofnether.building.BuildingClientEvents;
 import com.solegendary.reignofnether.building.BuildingPlaceButton;
+import com.solegendary.reignofnether.building.BuildingPlacement;
 import com.solegendary.reignofnether.building.Buildings;
-import com.solegendary.reignofnether.building.production.ResourceBuilding;
+import com.solegendary.reignofnether.building.buildings.placements.SawmillPlacement;
+import com.solegendary.reignofnether.building.resource.ResourceBuilding;
 import com.solegendary.reignofnether.faction.Faction;
 import com.solegendary.reignofnether.keybinds.Keybinding;
 import com.solegendary.reignofnether.research.ResearchClient;
@@ -14,12 +16,17 @@ import com.solegendary.reignofnether.resources.ResourceCosts;
 import com.solegendary.reignofnether.tutorial.TutorialClientEvents;
 import com.solegendary.reignofnether.tutorial.TutorialStage;
 import net.minecraft.client.resources.language.I18n;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Rotation;
 
 import java.util.List;
+
+import static com.solegendary.reignofnether.building.BuildingUtils.getAbsoluteBlockData;
 
 public class Sawmill extends ResourceBuilding {
     public final static String buildingName = "Sawmill";
@@ -45,6 +52,11 @@ public class Sawmill extends ResourceBuilding {
 
     public Faction getFaction() {
         return Faction.VILLAGERS;
+    }
+
+    @Override
+    public BuildingPlacement createBuildingPlacement(Level level, BlockPos pos, Rotation rotation, String ownerName) {
+        return new SawmillPlacement(this, level, pos, rotation, ownerName, getAbsoluteBlockData(getRelativeBlockData(level), level, pos, rotation), false);
     }
 
     public BuildingPlaceButton getBuildButton(Keybinding hotkey) {

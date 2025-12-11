@@ -258,7 +258,7 @@ public class ReignOfNetherCommonConfigs {
         public static final ResourceCostConfigEntry CASTLE = ResourceCostConfigEntry.Building(0,400,300, 0, ResourceCosts.CASTLE, "Castle Config");
         public static final ResourceCostConfigEntry IRON_GOLEM_BUILDING = ResourceCostConfigEntry.Building(0,50,250, 0, ResourceCosts.IRON_GOLEM_BUILDING, "Iron Golem Building Config");
         public static final ResourceCostConfigEntry SHRINE_OF_PROSPERITY = ResourceCostConfigEntry.Building(0,125,50, 0, ResourceCosts.SHRINE_OF_PROSPERITY, "Shrine of Prosperity Config");
-        public static final ResourceCostConfigEntry SAWMILL = ResourceCostConfigEntry.Building(0, 125, 100, 0, ResourceCosts.SAWMILL, "Sawmill Building Config");
+        public static final ResourceCostConfigEntry SAWMILL = ResourceCostConfigEntry.Building(0, 500, 500, 0, ResourceCosts.SAWMILL, "Sawmill Building Config");
 
         // Piglins
         public static final ResourceCostConfigEntry CENTRAL_PORTAL = ResourceCostConfigEntry.Building(0,350,250, 10, ResourceCosts.CENTRAL_PORTAL, "Central Portal Config");

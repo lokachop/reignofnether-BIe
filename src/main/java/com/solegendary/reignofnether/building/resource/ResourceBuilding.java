@@ -1,4 +1,4 @@
-package com.solegendary.reignofnether.building.production;
+package com.solegendary.reignofnether.building.resource;
 
 import com.solegendary.reignofnether.building.Building;
 import com.solegendary.reignofnether.building.BuildingPlacement;
@@ -12,10 +12,5 @@ import static com.solegendary.reignofnether.building.BuildingUtils.getAbsoluteBl
 public abstract class ResourceBuilding extends Building {
     public ResourceBuilding(String structureName, ResourceCost cost, boolean isCapitol) {
         super(structureName, cost, isCapitol);
-    }
-
-    @Override
-    public BuildingPlacement createBuildingPlacement(Level level, BlockPos pos, Rotation rotation, String ownerName) {
-        return new BuildingPlacement(this, level, pos, rotation, ownerName, getAbsoluteBlockData(getRelativeBlockData(level), level, pos, rotation), isCapitol);
     }
 }
