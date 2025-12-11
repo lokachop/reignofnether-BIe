@@ -89,6 +89,10 @@ public class ResourceCosts {
     public static final ResourceCost CASTLE = new ResourceCost(ID, "CASTLE");
     public static final ResourceCost IRON_GOLEM_BUILDING = new ResourceCost(ID, "IRON_GOLEM_BUILDING");
     public static final ResourceCost SHRINE_OF_PROSPERITY = new ResourceCost(ID, "SHRINE_OF_PROSPERITY");
+    // BIe
+    public static final ResourceCost SAWMILL = new ResourceCost(ID, "SAWMILL");
+    // endBIe
+
     //Piglins
     public static final ResourceCost CENTRAL_PORTAL = new ResourceCost(ID, "CENTRAL_PORTAL");
     public static final ResourceCost BASIC_PORTAL = new ResourceCost(ID, "BASIC_PORTAL");
@@ -271,6 +275,11 @@ public class ResourceCosts {
         CASTLE.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.CASTLE);
         IRON_GOLEM_BUILDING.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.IRON_GOLEM_BUILDING);
         SHRINE_OF_PROSPERITY.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.SHRINE_OF_PROSPERITY);
+
+        // BIe
+        SAWMILL.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.SAWMILL);
+        // endBIe
+
         // Piglins
         CENTRAL_PORTAL.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.CENTRAL_PORTAL);
         BASIC_PORTAL.bakeValues(ReignOfNetherCommonConfigs.BuildingCosts.BASIC_PORTAL);

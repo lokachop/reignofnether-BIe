@@ -21,7 +21,7 @@ modId="reignofnether" #mandatory
 # see the associated build.gradle script for how to populate this completely automatically during a build
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="Reign of Nether" #mandatory
+displayName="Reign of Nether: BIe" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -31,10 +31,11 @@ logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to Technovision for his YouTube guides" #optional
 # A text field displayed in the mod UI
-authors="SoLegendary, Goodbird (ported to 1.20.1)" #optional
+authors="SoLegendary, Goodbird (ported to 1.20.1), Lokachop (BIe)" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Minecraft, except it's an RTS
+Now with horrible changes!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.reignofnether]] #optional

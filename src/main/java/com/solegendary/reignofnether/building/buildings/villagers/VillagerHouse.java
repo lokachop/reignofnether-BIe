@@ -41,8 +41,7 @@ public class VillagerHouse extends Building {
     public BuildingPlaceButton getBuildButton(Keybinding hotkey) {
         ResourceLocation key = ReignOfNetherRegistries.BUILDING.getKey(this);
         String name = I18n.get("buildings." + getFaction().name().toLowerCase() + "." + key.getNamespace() + "." + key.getPath());
-        return new BuildingPlaceButton(
-            name,
+        return new BuildingPlaceButton(name,
             ResourceLocation.fromNamespaceAndPath("minecraft", "textures/block/oak_log.png"),
             hotkey,
             () -> BuildingClientEvents.getBuildingToPlace() == Buildings.VILLAGER_HOUSE,

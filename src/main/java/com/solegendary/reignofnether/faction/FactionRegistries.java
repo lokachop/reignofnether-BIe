@@ -75,6 +75,7 @@ public class FactionRegistries {
         register(Faction.VILLAGERS, Buildings.IRON_GOLEM_BUILDING, Keybindings.keyL);
         register(Faction.VILLAGERS, Buildings.OAK_BRIDGE, Keybindings.keyC);
         register(Faction.VILLAGERS, Buildings.BEACON);
+        register(Faction.VILLAGERS, Buildings.SAWMILL);
 
         //Neutral
         register(Faction.NONE, Buildings.CAPTURABLE_BEACON, Keybindings.keyQ);

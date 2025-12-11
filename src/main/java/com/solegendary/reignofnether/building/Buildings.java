@@ -57,6 +57,11 @@ public class Buildings {
     public static final ShrineOfProsperity SHRINE_OF_PROSPERITY = register(ResourceLocation.fromNamespaceAndPath(ReignOfNether.MOD_ID, "shrine_of_prosperity"), new ShrineOfProsperity());
     public static final InfernalPortal INFERNAL_PORTAL = register(ResourceLocation.fromNamespaceAndPath(ReignOfNether.MOD_ID, "infernal_portal"), new InfernalPortal());
 
+    // BIe
+    public static final Sawmill SAWMILL = register(ResourceLocation.fromNamespaceAndPath(ReignOfNether.MOD_ID, "sawmill"), new Sawmill());
+    // endBIe
+
+
     private static <T extends Building> T register(ResourceLocation id, T building) {
         return Registry.register(ReignOfNetherRegistries.BUILDING, id, building);
     }

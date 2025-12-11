@@ -475,6 +475,9 @@
     "buildings.villagers.reignofnether.shrine_of_prosperity.tooltip1": "A symbol of the alliance of Villagers and Pillagers.",
     "buildings.villagers.reignofnether.shrine_of_prosperity.tooltip2": "Trains new and revives fallen Villager heroes.",
 
+  "buildings.villagers.reignofnether.sawmill": "Sawmill",
+  "buildings.villagers.reignofnether.sawmill.tooltip1": "Produces wood at a stable rate",
+
     "buildings.neutral.reignofnether.capturable_beacon": "Capturable Beacon",
     "buildings.neutral.reignofnether.capturable_beacon.tooltip1": "A pyramid that grants a variety of powerful auras.",
     "buildings.neutral.reignofnether.capturable_beacon.tooltip2": "Controlling it for long enough grants victory.",
